@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 350px;
+  height: 500px;
+  /* background: #222; */
+  /* background-image: url(image/1600w-Fu25SPEYnAk.webp); */
+  /* background-image: url(image/4b177a453959a09fa747fef4da221d34.jpg); */
+  background-image: url(image/Aesthetic-Wallpaper-For-Laptop-Wallpaper-High-Quality.jpg);
+
+
+  background-size: cover;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.user {
+  background: #4cafef;
+  color: #000;
+  align-self: flex-end;
+}
+
+.bot {
+  background: #8e44ad;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  border-top: 1px solid #444;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  border: none;
+  background: #ffcc00;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-area button:hover {
+  background: #e6b800;
+}
