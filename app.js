@@ -5,11 +5,11 @@ function sendMessage() {
   const message = userInput.value.trim();
   if (message === "") return;
 
-  // Show user message
+
   appendMessage(message, "user");
   userInput.value = "";
 
-  // Bot reply with delay
+ 
   setTimeout(() => {
     botReply(message.toLowerCase());
   }, 1000);
@@ -31,7 +31,7 @@ function botReply(input) {
   } else if (input.includes("how are you")) {
     reply = "I’m just a bot, but I’m doing fine!";
   }
-   else if (input.includes("send me your github link") || input.includes("github link")|| input.includes("do you have github link")|| input.includes("Github")) {
+   else if (input.includes("github") || input.includes("github link")|| input.includes("do you have github link")|| input.includes("send me your github link")) {
     reply = "https://github.com/NaveeraRajChuhan";
   }
   
@@ -47,15 +47,19 @@ function botReply(input) {
     reply = "hey! my computer institute is SMIT Saylani Mass IT Traning ..my teacher miss Hira ..follow her github=> hira ikram";
   }
 
-//   else if (input.includes("how are you")) {
-//     reply = "I’m just a bot, but I’m doing fine!";
-//   }
+  else if (input.includes("how can you make chatbot") || input.includes("chatbot") || input.includes("how can you make it") || input.includes("how did you make it") || input.includes("kessay banaya")) {
+    reply = "ithis chatbot is made by using if,else if statement and include method and also use set time out";
+  }
   
   
   
+   else if (input.includes("how are you") || input.includes("how's going") || input.includes("ap kessay ho")) {
+    reply = "Better than you!";
+  }
   
-  
-  
+  else if (input.includes("are you single") || input.includes("single?") || input.includes("ap single ho")) {
+    reply = "im comitted and happy in my life dont interfare in my life...... may be you are single and be rozgar :)oops! sorry but its reality hahahah";
+  }
   
   
   
