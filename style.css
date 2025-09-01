@@ -40,12 +40,15 @@ body {
 
 .user {
   background: #4cafef;
+  margin-left:80px ;
+
   color: #000;
   align-self: flex-end;
 }
 
 .bot {
   background: #8e44ad;
+  /* margin-left:80px ; */
   color: #fff;
   align-self: flex-start;
 }
